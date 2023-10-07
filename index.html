@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class="header">
+                <h5 id="pager">Pager</h5>
+                <h3 class="output-num" id="output-num">0</h3>
+            </section>
+        
+            <section class="main">
+                <h5 class="phone">Phone</h5>
+                <h3 class="input-num" id="input-num">0</h3>
+                <div class="num-row">
+                    <button class="btn" onclick="button(1)">1</button> <button class="btn" onclick="button(2)">2</button> <button class="btn" onclick="button(3)">3</button>
+                </div>
+                <div class="num-row">
+                    <button class="btn" onclick="button(4)">4</button> <button class="btn" onclick="button(5)">5</button> <button class="btn" onclick="button(6)">6</button>
+                </div>
+                <div class="num-row">
+                    <button class="btn" onclick="button(7)">7</button> <button class="btn" onclick="button(8)">8</button> <button class="btn" onclick="button(9)">9</button>
+                </div>
+                <div class="num-row">
+                    <button class="btn" onclick="button('*')">*</button> <button class="btn" onclick="button(0)">0</button> <button class="btn" onclick="button('#')">#</button>
+                </div>
+                <div class="reset-btn" onclick="startOver()">RESET</div>
+                <div class="send-btn" onclick="sendOver()">SEND</div>
+            </section>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
